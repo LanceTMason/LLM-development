@@ -14,7 +14,7 @@
 - [cite_start]**Genetic Epistemology:** A method of assessing AI growth through behavioral benchmarks and the origin of knowledge rather than static tests[cite: 48, 56, 57].
 - [cite_start]**Architectural Shift:** The critical transition where the professional moves from manual "tool use" to "architecting" autonomous agentic systems[cite: 6, 77].
 
-## 📚 Core References
+## Core References
 - [cite_start]**Maltz, M. (1960).** *Psychocybernetics*[cite: 17].
 - [cite_start]**Piaget, J. (1952).** *The Origins of Intelligence in Children*[cite: 38].
 - **Anthropic PBC. (2024)[cite_start].** *Building Effective Agents*[cite: 72].
