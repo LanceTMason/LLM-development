@@ -21,5 +21,5 @@
 - **Papert, S. (1980).** *Mindstorms: Children, Computers, and Powerful Ideas*.
 
 ---
-[cite_start]**Author:** Lance T. Mason, CPA [cite: 3]  
-[cite_start]**Journal:** Academic Journal on Computing, Engineering and Applied Mathematics (April 2026) [cite: 1]
+[cite_start]**Author:** Lance T. Mason, CPA
+[cite_start]**Journal:** Journal on Computing, Engineering and Applied Mathematics in Public Accounting (April 2026) [cite: 1]
