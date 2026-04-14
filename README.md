@@ -7,7 +7,7 @@
 ## Abstract
 [cite_start]This framework maps the evolution of AI competency in the accounting profession to **Jean Piaget’s four stages of cognitive development**[cite: 5, 38]. [cite_start]It establishes that AI adoption is a dual-evolutionary process: as Large Language Models (LLMs) evolve from simple text predictors to autonomous agents, user proficiency must simultaneously transition from basic interaction to system architecture[cite: 6, 7].
 
-## 🧠 The Framework: Dual Evolution
+## The Framework: Dual Evolution
 
 ### Key Concepts
 - [cite_start]**The "Zigzag" Pattern:** An analogy for the refined learning process of both users and models based on Maltz’s *Psychocybernetics*[cite: 17, 19].
