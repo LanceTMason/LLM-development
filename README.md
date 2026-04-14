@@ -25,4 +25,5 @@ This framework maps the evolution of AI competency in the accounting profession 
 
 ---
 
-**Author:** Lance T. Mason, CPA **Journal:** Journal on Applied Computing in Public Accounting (April 2026\)
+**Author:** Lance T. Mason, CPA 
+**Journal:** Journal on Applied Computing in Public Accounting (April 2026\)
