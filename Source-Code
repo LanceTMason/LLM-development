@@ -1,0 +1,166 @@
+%% This is file AJCEAM-paper.tex is the template file for publications
+%% in the "Rise Over Run"
+%% from Universidade Federal do Tocatins, Brazil,
+%% https://sistemas.uft.edu.br/periodicos/index.php/AJCEAM/index
+%% This file was originally written by Tiago Almeida.
+%% First version: 2026
+%%
+%% History:
+%%           04/14/2026 Lance Mason
+
+% Options
+%     eng:   English Language
+
+\documentclass[eng]{ajceam-class}
+%
+% Publication Title
+\title{The Cognitive Development Framework for Artificial Intelligence Proficiency}
+
+% Publication Title (Portuguese only)
+\titulo{Instruções para os autores da Academic Journal on Computing, Engineering and Applied Mathematics}
+
+% Short title for the header (copy the main title if it is not too long)
+\shorttitle{The Cognitive Development Framework for AI Proficiency}
+       
+% Authors
+\author[1]{Lance T Mason, CPA}
+
+%Contact Author Information
+\contactauthor{https://www.linkedin.com/in/lancetmason/}           % Name and surname of the contact author
+
+% Publication data (will be defined in the edition)
+\thisvolume{01}
+\thisnumber{01}
+\thismonth{April}
+\thisyear{2026}
+\receptiondate{dd/mm/aaaa}
+\acceptancedate{dd/mm/aaaa}
+\publicationdate{04/12/2026}
+
+% Place your particular definitions here
+\newcommand{\vect}[1]{\mathbf{#1}}  % vectors
+
+% Insert here the abstract in English language
+\abstract{
+This report introduces "The Cognitive Development Framework for AI Proficiency," which maps the evolution of AI competency in the accounting profession to Jean Piaget’s four stages of cognitive development. The central premise is that AI adoption progresses through structured stages, where users of AI systems move from basic Awareness of AI applications to the Orchestration of Agent Architecture, thereby ensuring a structured path toward mastery rather than a disjointed adoption of disparate tools. The framework details four phases: the Sensory-Motor Stage (basic chat interactions), the Pre-operational Stage (individual tool use for isolated tasks), the Concrete Operational Stage (manual comparison of multiple model outputs), and the final Formal Operational Stage, where the user architects autonomous agent systems capable of complex function calling and long tasks. Progress is measured by number of tokens generated, and the methods they use to interface with the technology (e.g. chat interface or API calls).
+}
+
+% Insert here the keywords of your work in English language
+\keywords{
+Artificial Intelligence, Large Language Models, cognitive development, Public Accounting}
+
+
+% Insert here the abstract in Portuguese language
+\resumo{
+Este documento fornece um modelo para a elaboração de trabalhos originais cujos autores desejam ser publicados na Academic Journal on Computing, Engineering and Applied Mathematics da Universidade Federal do Tocantins Tocantins, Brasil. A princípio, recomendamos fortemente que o resumo seja escrito em um único parágrafo contendo no mínimo 150 e no máximo 200 palavras. Nesta seção de texto, espera-se um resumo incluindo o contexto, motivação, metodologia, as contribuições mais originais, resultados e conclusões do seu trabalho. Além disso, citações bibliográficas, siglas ou fórmulas devem ser evitadas tanto no resumo quanto no título. Também é fortemente recomendado evitar quaisquer referências a figuras ou tabelas nesta seção. Finalmente, é uma boa prática escrever seu artigo inserindo texto e excluindo diretamente deste arquivo de modelo para manter os estilos predefinidos.}
+
+% Insert here the keywords of your work in Portuguese language
+\palavraschave{
+Primeira palavra ou frase-chave, segunda palavra ou frase-chave, terceira palavra ou frase-chave. (Coloque entre três e seis palavras-chave ou frases separadas por vírgula, que representam o tema do seu trabalho)}
+
+% Start document
+\begin{document}
+
+% Include title, authors, abstract, etc.
+\maketitle
+\thispagestyle{fancy}
+\printcontactdata
+
+% Main body of manuscript
+\section{Preface}
+Sam Altman - in a video announcing a joint venture called io between OpenAI and Jonny Ive's company LoveFrom - described the fragmented way that users interact with platforms like ChatGPT. I believe that the fragmented series of steps followed to interact with this incredible technology is a sign that we are still early in the development of Artificial Intelligence (AI). And as such, new interfaces and even entirely new AI algorithms will need to be created to deliver on the promises this technology offers. The purpose of this paper and the framework contained in it is to articulate the development of Large Language Models (LLMs) thus far, and define the competency steps for using AI applications, allowing CPA Candidates and licensed CPAs to assess their skill progression. My hope is that this will serve as a framework for others as well.
+
+\section{Introduction}
+\firstword{T}{he} % Capital letter in first word 
+progression of LLM applications to agentic systems can be analogized to a baby learning to use its muscles, as described by Dr. Maxwell Maltz in the book Psychocybernetics. In the book, he states:
+
+\textbf{\textit{"In a baby, just learning to use its muscles, the correction of the hand in reaching for a rattle is very obvious. The baby has little 'stored information' to draw upon. Its hand zigzags back and forth as it reaches.
+It is characteristic of all learning that as learning takes place, correction becomes more and more refined. We see this in a person just learning to drive a car, who 'over-corrects' and zigzags back and forth across the street.
+Once, however, a correct or 'successful response' has been accomplished—it is 'remembered' for future use. It has 'learned' how to respond successfully. It 'remembers' its successes, forgets its failures, and repeats the successful action without any further conscious 'thought'—or as a habit."}}
+
+In other words, just as a baby's hand "zigzags back and forth" when reaching for a rattle due to a lack of "stored information," LLMs zigzag across digital workspaces until such time that the tooling is developed to guide them to successful tasks (e.g. making money on the internet). Users of nascent AI applications experience this kind of zigzagging as well. Users follow a fragmented series of steps to get the most out of LLMs, on their way to becoming proficient in the using Software Development Kits (SDKs). Learning - both by the models themselves and the users of these models - is characterized by this initial over-correction, and the zigzag pattern becomes a straight line over time. A "successful response" is remembered and repeated as a habit, in humans, whereas LLMs tend not to have this stored unless the environment, files, and prompts are configured in such a way that they are reminded each time they are instantiated. This "zigzagging" in AI usage, can be found in not only how individuals use this technology, but in how the industry in general uses it.
+
+For example, swaths of individual and business users have migrated from OpenAI to Anthropic. Moreover, even users who have much more mature tooling, will switch between models depending on the use case. They tend to be aware of the pros and cons of specific models.
+
+\section{Theoretical Background: Piaget's Theory of Cognitive Development}
+
+\subsection{Jean Piaget}
+
+Jean Piaget (1896–1980), widely considered the father of modern child psychology, proposed that children move through four distinct stages of mental development as they interact with the world. 
+
+The four stages of Piaget's Theory of Cognitive Development are:
+\begin{enumerate}
+    \item Sensorimotor (Birth–2 years): Learning through senses and motor actions; milestone is object permanence.
+    \item Preoperational (2–7 years): Symbolic thought (language, pretend play) emerges, but thinking is egocentric and lacks conservation.
+    \item Concrete Operational (7–11 years): Logic begins; children can perform mental operations on physical objects and understand conservation. 
+    \item Formal Operational (12+ years): Abstract and theoretical reasoning develops, allowing for hypothetical scenarios and systematic problem-solving.
+\end{enumerate}
+
+Before Piaget, the prevailing view was that children were simply "miniature adults" who knew less. Piaget proved that children actually process information and perceive reality in entirely different ways than adults do. His key contributions were:
+
+\begin{enumerate}
+    \item Constructivism
+    \item Genetic Epistemology
+    \item The Clinical Method
+\end{enumerate}
+
+Through my use of LLMs, I noticed that these four cognitive stages provide a precise model for the evolution of both agentic AI systems and the proficiency of individual users. Also, it sets the stage for the next epoch of Artificial Intelligence.
+
+In constructivism, Piaget argued that children are not passive sponges; they are "little scientists" who actively build (construct) their own understanding of the world through experimentation. How this relates to AI is that generative pre-trained transformers (GPTs) are believed to construct a model of the world that is captured in the weights of their neurons. 
+
+In genetic epistemology, the name for his field of study, Piaget was all about studying genes. But he wasn't interested in genes in a biological sense, rather, the genesis (origin) of knowledge and how the ability to think evolves over time. How this relates to LLMs is that by understanding the algorithm and identifying the benchmarks along which models make progress, you can identify whether or not models are getting better at doing things that humans can do.
+
+Regarding The Clinical Method, unlike researchers who used standardized tests, Piaget interviewed children and observed their mistakes. He realized that the types of mistakes children made were consistent across age groups, which led him to his famous four stages of development. And this relates to LLMs because if you use AI for enough use cases you can start to see that pattern of  mistakes AI makes - across various developers of AI models are similar. 
+
+\section{The Framework}
+
+\subsection{Sensory-Motor Stage: The Awareness Layer}
+\textbf{User Proficiency:} At this stage, the professional is merely interacting with the ``chat interface''. They understand that a prompt leads to a response but do not yet grasp the underlying logic. This is characterized by the ``novelty factor'' where utility is not yet integrated into core workflows. \\
+\textbf{Model Development:} The LLM operates as a probabilistic text completer. It lacks long-term coherence and relies on the user to provide the entire context for every interaction, mimicking a child's reliance on immediate sensory input. \\
+\textbf{Metric:} Basic chat interactions and awareness of public models like ChatGPT and Claude.
+
+\subsection{Pre-operational Stage: Individual Tool Use}
+\textbf{User Proficiency:} The professional begins to use AI for symbolic representation, such as drafting emails or summarizing memos. Reasoning is still one-dimensional, and the user remains ``keyboard-heavy,'' manually moving data to and from the chat. \\
+\textbf{Model Development:} The model achieves basic instruction-following and maintains a better "mental" model of the prompt's intent. However, it still lacks systematic logic and often ``zigzags'' or hallucinates when faced with complex multi-step reasoning. \\
+\textbf{Metric:} Use of consumer-grade applications for isolated tasks; identifying specific use cases (e.g., ``I could use ChatGPT for X!'').
+
+\subsection{Concrete Operational Stage: Rudimentary Workflow Use}
+\textbf{User Proficiency:} This is the ``Logic'' phase. The professional understands that AI can follow a sequence of operations along predefined paths. Users begin to judge model outputs manually, often running the same query through multiple models to find consensus. \\
+\textbf{Model Development:} Models at this stage exhibit improved ``conservation'' of logic over longer context windows. They can follow rigid "Chain of Thought" paths and interact with structured data, though they still require human "manual comparison" to ensure accuracy. \\
+\textbf{Metric:} Parallelization and voting; the shift toward building rudimentary agents using a ``Judge'' agent for consensus.
+
+\subsection{Formal Operational Stage: Agent Architecture}
+\textbf{User Proficiency:} The final stage involves abstract reasoning about the system itself. The CPA no longer ``uses'' AI; they ``architect'' it. They use agent harnesses (e.g. Claude Cowork) and have a deep understanding of how all of the pieces fit together. They do not just prompt the LLM within the harness (because that would be indicative of the first stage). Proficiency markers are things such as: do they know about Agent SDKs, do they know what an SDK is, can they build a working agent and develop autonomous systems to carry out some task? Do they account for security concerns and properly address them? \\
+\textbf{Model Development:} The AI evolves into an agentic system capable of ``Complex Function Calling'' and long-running tasks. The model can reason about its own errors and self-correct, moving from a zigzagging pattern to a straight line of task execution. \\
+\textbf{Outcome:} Creation of autonomous systems that follow commonly known agentic patterns and handle complex, multi-layered problem solving.
+
+\section*{Appendix: References and Citations}
+
+The following sources provide the theoretical and technical foundation for the Cognitive Development Framework for AI Proficiency.
+
+\subsection*{Primary Theoretical Sources}
+
+\begin{itemize}
+    \item \textbf{Maltz, M.} (1960). \textit{Psychocybernetics: A New Way to Get More Living Out of Life}. Prentice-Hall. (Source for the ``zigzag'' learning pattern and servo-mechanism analogies).
+    \item \textbf{Piaget, J.} (1952). \textit{The Origins of Intelligence in Children}. International Universities Press. (Foundational text for the Sensorimotor, Pre-operational, Concrete Operational, and Formal Operational stages).
+    \item \textbf{Piaget, J.} (1971). \textit{Genetic Epistemology}. W. W. Norton \& Company. (Source for the genesis of knowledge and structuralist learning).
+\end{itemize}
+
+\subsection*{Technical and Industry Sources}
+
+\begin{itemize}
+    \item \textbf{Altman, S.} (2024). \textit{OpenAI Announcement}. Discussion on OpenAI and LoveFrom partnership regarding fragmented user steps and agentic evolution.
+    \item \textbf{Anthropic PBC.} (2024). \textit{Building Effective Agents}. Anthropic Technical Documentation. (Source for the formal definition of ``Workflows'' and ``Judge'' agent patterns).
+    \item \textbf{OpenAI.} (2024). \textit{GPT-4o System Card and Technical Documentation}. (Reference for token-based progress and function-calling capabilities).
+\end{itemize}
+
+\subsection*{Academic Frameworks (Contextual)}
+
+\begin{itemize}
+    \item \textbf{Papert, S.} (1980). \textit{Mindstorms: Children, Computers, and Powerful Ideas}. Basic Books. (Foundational reference for Constructivism in computer science---highly recommended as a supporting citation for Section III).
+    \item \textbf{Vygotsky, L. S.} (1978). \textit{Mind in Society: Development of Higher Psychological Processes}. Harvard University Press. (The concept of the ``Zone of Proximal Development,'' which complements the transition between the Concrete and Formal Operational stages).
+\end{itemize}
+
+\end{document}
+
+\end{document}
